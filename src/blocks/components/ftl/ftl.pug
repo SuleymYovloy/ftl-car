@@ -1,0 +1,61 @@
+section.section
+	.container
+		.ftl__content 
+			h1.ftl__title FTL: Прямая машина
+			.ftl__route
+				form(action="")
+					h1.ftl__route-title.ftl__forms-title <span>1</span> Маршрут
+					.ftl__route-forms
+						.ftl__route-form
+							label(for="") Откуда
+							input(type="text").ftl__route-input
+						.ftl__route-form
+							label(for="") Куда
+							input(type="text").ftl__route-input
+			.ftl__transport
+				form(action="")
+					h1.ftl__transport-title.ftl__forms-title <span>2</span> Транспорт
+					.ftl__transport-selects
+						.ftl__transport-select-cargo
+							h3.ftl__select-cargo-title.ftl__transport-select-title Грузоподъемность
+							select(name="select").ftl__transport-select-one.ftl__transport-select
+								option(value="0") Не выбрана
+								option(value="1") Выбрана 1
+								option(value="2") Выбрана 2
+								option(value="3") Выбрана 3
+						.ftl__transport-select-method
+							h3.ftl__select-method-title.ftl__transport-select-title Способ погрузки
+							select(name="select").ftl__transport-select-two.ftl__transport-select
+								option(value="0") Не выбрана
+								option(value="1") Передняя
+								option(value="2") Задняя
+			.ftl__cargo
+				form(action="")
+					h1.ftl__cargo-title.ftl__forms-title <span>3</span> Груз
+					.ftl__cargo-selects
+						.ftl__cargo-select-type
+							h3.ftl__select-type-title.ftl__cargo-select-title Тип груза
+							select(name="select").ftl__cargo-select-one
+								option(value="1") Не выбрана
+								option(value="2") Вариант 1
+								option(value="3") Вариант 1
+								option(value="4") Вариант 1
+						.ftl__cargo-select-cargo
+							h3.ftl__select-cargo-title.ftl__cargo-select-title Класс опасности
+							select(name="select").ftl__cargo-select-two.ftl__cargo-select
+								option(value="0") Не выбрана
+								option(value="1") Класс 5 — Окисляющие вещества и органические перекиси
+								option(value="2") Класс 5 — Окисляющие вещества и органические перекиси
+								option(value="3") Класс 5 — Окисляющие вещества и органические перекиси
+						.ftl__cargo-select-method
+							h3.ftl__select-method-title.ftl__cargo-select-title Объявленная ценность, <span>&#8381</span>
+							select(name="select").ftl__cargo-select-three.ftl__cargo-select
+								option(value="0") Не выбрана
+								option(value="1") Передняя
+								option(value="2") Задняя
+				.ftl__cargo-checkbox
+					input(type="checkbox" id="ftl__cargo-check").ftl__cargo-check
+					label(for="ftl__cargo-check") Требуется температурный режим
+			.ftl__time
+				 
+			

@@ -1,0 +1,180 @@
+*,
+*:after,
+*:before 
+  box-sizing: border-box
+  outline: none
+
+.ftl
+
+	&__title
+		font-family 'Helvetica'
+		color: #fff
+		font-size 3.5rem
+		font-weight bold
+		line-height 1.1
+		margin-top 0.7em
+		margin-bottom 0.3em
+	
+	&__route
+		margin-bottom 2.5em
+	
+	&__forms-title
+		font-family 'Helvetica'
+		color: #fff
+		font-size 1.5rem
+		font-weight bold
+		line-height 1.1
+		display flex
+		align-items center
+		margin-bottom: 0.6em
+	
+	&__forms-title span
+		font-size 1rem
+		font-family 'Helvetica'
+		color: #fff
+		font-weight bold
+		padding 0.19em 0.5em
+		background-color: #EF483E
+		border-radius: 50%
+		text-align center
+		margin-right: 0.5em
+	
+	&__route-form
+		font-size 1rem
+		font-family 'Helvetica'
+		color: #fff	
+		margin-bottom 1em
+		&:last-child
+			margin-bottom 0
+	
+	&__route-input
+		display block
+		width 45.6em
+		height 2.75em
+		margin-top 0.5em
+	
+	&__transport
+		margin-bottom 2.5em
+	
+	&__transport-selects
+		display flex
+	
+	&__transport-select-one
+		width 10.75em
+		height 2.75em
+	
+	&__transport-select-two
+		width 10.75em
+		height 2.75em
+	
+	&__transport-select
+		appearance none
+		overflow hidden
+		background: url(../img/svg/arrow.svg) no-repeat 90% 20px
+		background-color: #fff
+		font-size 1rem
+		font-family 'Helvetica'
+		color #000
+		padding-left: 14px
+		margin-top 0.5em
+	
+	&__transport-select-title
+		font-size 0.81rem
+		font-family 'Helvetica'
+		line-height 1.2em
+		color: #fff
+		font-weight normal
+	
+	&__transport-select-cargo
+		margin-right: 0.75em
+		
+	&__cargo-selects
+		width 22.25em
+		display flex
+		flex-wrap wrap
+	
+	&__cargo-select-one
+		width 22.25em
+		height 2.75em
+		appearance none
+		overflow hidden
+		background: url(../img/svg/arrow.svg) no-repeat 95% 20px
+		background-color: #fff
+		font-size 1rem
+		font-family 'Helvetica'
+		color #000
+		padding: 0 3em 0 0.875em
+		margin 0.5em 0 1em
+	
+	&__cargo-select-two
+		width 10.75em
+		height 2.75em
+	
+	&__cargo-select-three
+		width 10.75em
+		height 2.75em
+	
+	&__cargo-select
+		appearance none
+		overflow hidden
+		background: url(../img/svg/arrow.svg) no-repeat 90% 20px
+		background-color: #fff
+		font-size 1rem
+		font-family 'Helvetica'
+		color #000
+		padding-left: 14px
+		margin-top 0.5em
+		padding-right 3em
+	
+	&__cargo-select-title
+		font-size 0.81rem
+		font-family 'Helvetica'
+		line-height 1.2em
+		color: #fff
+		font-weight normal
+	
+	&__cargo-select-title span
+		font-size 0.81rem
+		font-family 'Helvetica'
+		line-height 1.2em
+		color: #fff
+		font-weight normal
+
+	&__cargo-select-cargo
+		margin-right: 0.75em
+	
+	&__cargo-checkbox
+		margin-top: 1em
+		display flex
+	
+	&__cargo-check
+		position absolute
+		z-index -1
+		opacity 0
+	
+	&__cargo-checkbox label
+		display flex
+		align-items center
+		user-select: none
+		font-size 0.81rem
+		font-family 'Helvetica'
+		font-style normal
+		color: #fff
+	
+	&__cargo-check+label::before
+		content: ''
+		display inline-block
+		width 1.8em
+		height 1.8em
+		flex-shrink 0
+		flex-grow 0
+		border: 2px solid #fff
+		margin-right 0.75em
+		background-repeat no-repeat
+		background-position: center center
+		background-size 50% 50%
+	
+	&__cargo-check:checked+label::before
+		border-color: #EF483E
+		background-color: #EF483E
+		background-image: url(../img/svg/check.svg)
